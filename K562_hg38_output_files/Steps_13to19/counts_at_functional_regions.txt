@@ -1,0 +1,93 @@
+Script started on Tue Sep 14 06:46:20 2021
+[?1034hbash-3.2$ ## Total count of active sites of transcription (uniquely mapping reads) in the dataset:
+bash-3.2$ echo total reads:
+total reads:
+bash-3.2$ totC=$(awk 'END { print NR }' PROseq_K562_hg38_3pnt.bed)
+echo ${totC}
+## Engaged Pol II at transcribed enhancers:
+echo enhancers:
+enhC=$(awk 'END { print NR }' PROseq_K562_enhancers.bed)
+echo ${enhC}
+
+## Engaged Pol II at divergent transcripts:
+echo divergentTx:
+divC=$(awk 'END { print NR }' PROseq_K562_ppDiv.bed)
+echo ${divC}
+
+## Engaged Pol II at promoters:
+echo promoter:
+ppC=$(awk 'END { print NR }' PROseq_K562_ppPolII.bed)
+echo ${ppC}
+
+## Engaged Pol II at gene bodies:
+echo gene body:
+GBC=$(awk 'END { print NR }' PROseq_K562_GB.bed)
+echo ${GBC}
+
+## Engaged Pol II at the cleavage and polyadenylation regions:
+echo CPS:
+CPSC=$(awk 'END { print NR }' PROseq_K562_CPS.bed)
+echo ${CPSC}
+
+## Engaged Pol II at the termination windows:
+echo termination window:
+twC=$(awk 'END { print NR }' PROseq_K562_TW.bed)
+echo ${twC}
+
+## Engaged Pol II at sites that did not localize to any of the identified functional regions:
+echo noGenesNoEnhancers:
+noGdnoE=$(awk 'END { print NR }' PROseq_K562_noGene_noEnh.bed)
+echo ${noGdnoE}
+bash-3.2$ echo ${totC}
+17824445
+bash-3.2$ ## Engaged Pol II at transcribed enhancers:
+bash-3.2$ echo enhancers:
+enhancers:
+bash-3.2$ enhC=$(awk 'END { print NR }' PROseq_K562_enhancers.bed)
+bash-3.2$ echo ${enhC}
+965358
+bash-3.2$ 
+bash-3.2$ ## Engaged Pol II at divergent transcripts:
+bash-3.2$ echo divergentTx:
+divergentTx:
+bash-3.2$ divC=$(awk 'END { print NR }' PROseq_K562_ppDiv.bed)
+bash-3.2$ echo ${divC}
+735198
+bash-3.2$ 
+bash-3.2$ ## Engaged Pol II at promoters:
+bash-3.2$ echo promoter:
+promoter:
+bash-3.2$ ppC=$(awk 'END { print NR }' PROseq_K562_ppPolII.bed)
+bash-3.2$ echo ${ppC}
+2962086
+bash-3.2$ 
+bash-3.2$ ## Engaged Pol II at gene bodies:
+bash-3.2$ echo gene body:
+gene body:
+bash-3.2$ GBC=$(awk 'END { print NR }' PROseq_K562_GB.bed)
+bash-3.2$ echo ${GBC}
+9522297
+bash-3.2$ 
+bash-3.2$ ## Engaged Pol II at the cleavage and polyadenylation regions:
+bash-3.2$ echo CPS:
+CPS:
+bash-3.2$ CPSC=$(awk 'END { print NR }' PROseq_K562_CPS.bed)
+bash-3.2$ echo ${CPSC}
+691255
+bash-3.2$ 
+bash-3.2$ ## Engaged Pol II at the termination windows:
+bash-3.2$ echo termination window:
+termination window:
+bash-3.2$ twC=$(awk 'END { print NR }' PROseq_K562_TW.bed)
+bash-3.2$ echo ${twC}
+1356590
+bash-3.2$ 
+bash-3.2$ ## Engaged Pol II at sites that did not localize to any of the identified functional regions:
+bash-3.2$ echo noGenesNoEnhancers:
+noGenesNoEnhancers:
+bash-3.2$ noGdnoE=$(awk 'END { print NR }' PROseq_K562_noGene_noEnh.bed)
+bash-3.2$ echo ${noGdnoE}
+1591661
+bash-3.2$ exit
+
+Script done on Tue Sep 14 06:53:38 2021

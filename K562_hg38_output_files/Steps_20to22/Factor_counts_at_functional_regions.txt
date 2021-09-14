@@ -1,0 +1,76 @@
+Script started on Tue Sep 14 16:42:35 2021
+
+
+total peaks of TBP:
+24808
+enhancer peaks of TBP:
+5099
+divergentTx peaks of TBP:
+2381
+promoter peaks of TBP:
+11974
+genebody peaks of TBP:
+2804
+CPS peaks of TBP:
+90
+postCPS peaks of TBP:
+409
+noGenesNoEnhancers peaks of TBP:
+2051
+total peaks of GATA1:
+11176
+enhancer peaks of GATA1:
+2118
+divergentTx peaks of GATA1:
+100
+promoter peaks of GATA1:
+206
+genebody peaks of GATA1:
+3782
+CPS peaks of GATA1:
+78
+postCPS peaks of GATA1:
+484
+noGenesNoEnhancers peaks of GATA1:
+4408
+total peaks of CTCF:
+47685
+enhancer peaks of CTCF:
+2037
+divergentTx peaks of CTCF:
+765
+promoter peaks of CTCF:
+1918
+genebody peaks of CTCF:
+12821
+CPS peaks of CTCF:
+558
+postCPS peaks of CTCF:
+2747
+noGenesNoEnhancers peaks of CTCF:
+26839
+total peaks of H3K36me3:
+31246
+enhancer peaks of H3K36me3:
+27
+divergentTx peaks of H3K36me3:
+7
+promoter peaks of H3K36me3:
+9
+genebody peaks of H3K36me3:
+29199
+CPS peaks of H3K36me3:
+822
+postCPS peaks of H3K36me3:
+506
+noGenesNoEnhancers peaks of H3K36me3:
+676
+
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...     127 completed.
+
+Script done on Tue Sep 14 16:43:06 2021
