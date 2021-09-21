@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000\c0;\csgray\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 This repository provides the code to identify functional genomic regions based on the profile of nascent transcription. Please see the following preprint for details: Rabenius A, Chandrakumaran S, Vihervaara A,\cf2  Sistonen L (2021) bioRxiv. \cb3 \expnd0\expndtw0\kerning0
+https://doi.org/10.1101/2021.08.03.454856\cf0 \cb1 \kerning1\expnd0\expndtw0  \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\ul To run the code:\
+\ulnone \
+1)\
+Please the PRO-seq input files (three unnormalised bigWig files and a bed-file of raw reads) into the working directory. The input files in the example are listed below and can be downloaded from Gene Expression Omnibus 
+\fs22 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE181161)
+\fs24 :\
+
+\fs22 PROseq_K562_hg38.bed\
+PROseq_K562_hg38_pl.bigWig\
+PROseq_K562_hg38_mn.bigWig\
+
+\fs24 \
+2) \
+Place the dREGcalls file generated in steps 1-3 into your working directory. The dREGcalls file generated in the example is found in the \'93\'85output_files\'94 folder in this GitHub repository. The name of the example file is: \
+
+\fs22 dREGcalls_hg38_K562.bed
+\fs24 \
+\
+3) Generate summit coordinates for your chromatin-associating factors of interest. Please these files listing the summit coordinates into the working directory. Four examples of summit coordinates for chromatin-associating proteins are given in the folder: K562_hg38_factorSummits. These factor summit coordinates were derived from ENCODE ChIP-seq data (Consortium EP, 2011), remapped to hg38. \
+ \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 4) Ensure that the following three scripts are in your working directory. \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf4 \CocoaLigature0 sh Rabenius_etal_2021_code.sh\
+Rabenius_etal_2021_steps_4to6.R\
+Rabenius_etal_2021_steps_8to12.R
+\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+5)\
+In terminal shell, run the script by typing:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf4 \CocoaLigature0 sh Rabenius_etal_2021_code.sh\
+\
+
+\fs24 \
+\ul Please note:\ulnone \
+For verification purposes, the \cf0 \CocoaLigature1 output files of this script (that are smaller than 25MB) are provided in folder named \'92\'85output_files\'92.\
+
+\fs22 \cf4 \CocoaLigature0 \
+}
