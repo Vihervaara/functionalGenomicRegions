@@ -3,7 +3,7 @@ This repository provides the code to identify functional genomic regions based o
 To run the code:
 
 1)
-Place the PRO-seq input files (three unnormalised bigWig files and a bed-file of raw reads) into the working directory. The input files in the example are listed below and can be downloaded from Gene Expression Omnibus (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE181161):
+Place the PRO-seq input files (two unnormalised bigWig files and a bed-file of raw reads) into the working directory. The input files in the example are listed below and can be downloaded from Gene Expression Omnibus (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE181161):
 PROseq_K562_hg38.bed
 PROseq_K562_hg38_pl.bigWig
 PROseq_K562_hg38_mn.bigWig
@@ -12,7 +12,7 @@ PROseq_K562_hg38_mn.bigWig
 Place the dREGcalls file generated in steps 1-3 into your working directory. The dREGcalls file generated in the example is found in the “…output_files” folder in this GitHub repository. The name of the example file is: 
 dREGcalls_hg38_K562.bed
 
-3) Generate summit coordinates for your chromatin-associating factors of interest. Please these files listing the summit coordinates into the working directory. Four examples of summit coordinates for chromatin-associating proteins are given in the folder: K562_hg38_factorSummits. These factor summit coordinates were derived from ENCODE ChIP-seq data (Consortium EP, 2011), remapped to hg38. 
+3) Generate summit coordinates for your chromatin-associating factors of interest. Place these files listing the summit coordinates into the working directory. Four examples of summit coordinates for chromatin-associating proteins are given in the folder: K562_hg38_factorSummits. These factor summit coordinates were derived from ENCODE ChIP-seq data (Consortium EP, 2011), remapped to hg38. 
  
 4) Ensure that the following three scripts are in your working directory. 
 sh Rabenius_etal_2021_code.sh
@@ -25,5 +25,5 @@ sh Rabenius_etal_2021_code.sh
 
 
 Please note:
-For verification purposes, the output files of this script (that are smaller than 25MB) are provided in folder named ’…output_files’.
+For verification purposes, the output files of this script (smaller than 25MB) are provided in folder named ’…output_files’.
 
